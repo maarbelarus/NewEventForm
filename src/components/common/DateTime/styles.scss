@@ -1,0 +1,29 @@
+@import "src/components/common/vars.scss";
+
+.dateTimeCommon {
+
+  .label {
+    color: $black1;
+    margin-bottom: 2px;
+  }
+
+  input {
+    border: none;
+    border-bottom: 1px solid $black1;
+    outline: none;
+  }
+
+  &.error {
+    .label {
+      color: red;
+    }
+    input {
+      border-bottom: 1px solid red;
+    }
+  }
+
+  .betweenText {
+    margin: 0 12px;
+    color: $black1;
+  }
+}

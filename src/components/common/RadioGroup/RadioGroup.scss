@@ -1,0 +1,14 @@
+@import "src/components/common/vars.scss";
+
+.radioGroupCommon {
+
+  .radioGroupLabel {
+    color: $black1;
+    margin-bottom: 8px;
+  }
+
+  .radioLabel {
+    cursor: pointer;
+    margin-right: 8px;
+  }
+}

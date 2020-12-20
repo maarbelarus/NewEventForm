@@ -1,0 +1,16 @@
+.resultModalBody {
+  outline: none;
+  background: #fff;
+  padding: 24px;
+  width: 380px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border-radius: 4px;
+
+  .successTitle {
+    color: #4caf50;
+  }
+}

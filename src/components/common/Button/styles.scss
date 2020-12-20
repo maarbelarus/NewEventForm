@@ -1,0 +1,14 @@
+@import "src/components/common/vars.scss";
+
+.buttonCommon {
+  padding: 6px 16px;
+  cursor: pointer;
+  outline: none;
+  border-radius: 4px;
+
+  &.primary {
+    background: $blue1;
+    color: white;
+    border-color: $blue1;
+  }
+}

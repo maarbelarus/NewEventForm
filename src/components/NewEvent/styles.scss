@@ -1,0 +1,80 @@
+@import "src/components/common/vars.scss";
+
+.newEvent {
+  margin-top: 64px;
+
+  .title {
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    background: $blue1;
+    color: white;
+    font-size: 24px;
+    padding: 12px;
+  }
+
+  .onloadContainer {
+    position: absolute;
+    padding-top: 32px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+
+  }
+
+  .formContainer {
+    position: absolute;
+    left: 50%;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    min-width: 300px;
+    width: 90%;
+    max-width: 800px;
+    transform: translateX(-50%);
+  }
+
+  .formElementContainer {
+    border-radius: 4px;
+    padding: 32px;
+    box-shadow: 0 0 10px $black1;
+
+    .formElementTitle {
+      color: $blue1;
+      margin-top: 0;
+      margin-bottom: 32px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid rgba(0,0,0,0.1);
+    }
+
+    @media screen and (max-width: 768px) {
+      box-shadow: none;
+      padding: 0;
+      margin-top: 0;
+
+      .formElementTitle {
+        margin-top: 32px;
+      }
+    }
+  }
+
+  .inputItem {
+    margin-top: 16px;
+  }
+
+  .doubleItemContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .buttonContainer {
+    margin: 32px 0 16px 0;
+    text-align: right;
+  }
+
+  .readonly input {
+    color: $black1;
+  }
+}

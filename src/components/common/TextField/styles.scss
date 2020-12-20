@@ -1,0 +1,49 @@
+@import "src/components/common/vars.scss";
+
+.textFieldCommon {
+  font-size: 16px;
+  position: relative;
+
+  .label {
+    color: $black1;
+    margin-bottom: 2px;
+  }
+
+  input, textarea {
+    width: auto;
+    border: none;
+    border-bottom: 1px solid $black1;
+    outline: none;
+    font-size: 16px;
+    resize: none;
+  }
+
+  &.error {
+    input, textarea {
+      border-bottom: 1px solid red;
+    }
+    .label {
+      color: red;
+    }
+  }
+
+  .maxLength {
+    text-align: right;
+    font-size: 12px;
+    color: $black1;
+    position: absolute;
+    right: 0;
+  }
+
+  .afterText {
+    color: $black1;
+    margin-left: 8px;
+  }
+}
+
+.fullWidth {
+  width: 100%;
+  input, textarea {
+    width: 100%;
+  }
+}
